@@ -20,7 +20,8 @@ steps:
 
 run: |
 
-Invoke-WebRequest Uri "https://gitlab.com/chamod12/im_win-16_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.b cmd /c Downloads.bat
+Invoke-WebRequest Uri "https://gitlab.com/chamod12/im_win-16_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.b
+cmd /c Downloads.bat
 - name: Connect to LiteManager
 
 run: cmd /c show.bat

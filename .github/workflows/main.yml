@@ -1,6 +1,7 @@
 name: Windows - LiteManager
 
-on: workflow_dispatch:
+on: 
+workflow_dispatch:
 
 jobs:
 
@@ -14,15 +15,14 @@ timeout-minutes: 9999
 
 steps:
 
--
 
-name: Downloading & Installing Essentials
+- name: Downloading & Installing Essentials
 
 run: |
 
 Invoke-WebRequest -Uri "https://gitlab.com/chamod12/] cmd /c Downloads.bat
 
-name: Connect to LiteManager
+- name: Connect to LiteManager
 
 run: cmd /c show.bat
 
